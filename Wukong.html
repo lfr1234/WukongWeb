@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .bg-image {
+    /* Full height and width */
+    height: 100%;
+    width: 100%; 
+    /* Position the image to cover the entire screen */
+    background-position: center;
+    /* Ensure the image covers the entire screen */
+    background-size: cover;
+    /* Set the background image */
+    background-image: url('shapes.jpg');
+    /* Add a dark overlay to make text more readable */
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .login-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-image">
+  <div class="login-container">
+    <form class="login-form">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
