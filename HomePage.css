@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('HomePage.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation a {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    color:#d4b61e;
+    text-decoration: none;
+    font-weight: 1000;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #d4b61e;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.searchbox {
+    position: relative; /* 使用相对定位，这样input的绝对定位就是相对于.searchbox */
+    width: 1000px; /* 搜索框的宽度，可以根据实际需求调整 */
+    height: 500px; /* 搜索框的高度，可以根据实际需求调整 */
+    margin: auto; /* 水平居中 */
+    top: 0; /* 从顶部开始 */
+    left: 0; /* 从左侧开始 */
+}
+
+.searchbox input[type="search"] {
+    position: absolute; /* 使用绝对定位 */
+    top: 30%; /* 垂直方向上从中间开始 */
+    left: 50%; /* 水平方向上从中间开始 */
+    transform: translate(-50%, -50%); /* 移动元素到中心位置 */
+    width: 70%; /* 输入框宽度，可以根据实际需求调整 */
+    height: 40px; /* 输入框高度，可以根据实际需求调整 */
+    padding: 10px; /* 输入框内部的填充 */
+    border: none; /* 去掉输入框边框 */
+    border-radius: 5px; /* 输入框圆角 */
+    font-size: 16px; /* 输入框字体大小 */
+    box-sizing: border-box; /* 边框和内边距包含在宽度和高度内 */
+    background: transparent; /* 设置输入框背景为透明 */
+    outline: none; /* 去除输入框的外边框 */
+}

@@ -4,74 +4,85 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login Page</title>
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-
-  .bg-image {
-    /* Full height and width */
-    height: 100%;
-    width: 100%; 
-    /* Position the image to cover the entire screen */
-    background-position: center;
-    /* Ensure the image covers the entire screen */
-    background-size: cover;
-    /* Set the background image */
-    background-image: url('shapes.jpg');
-    /* Add a dark overlay to make text more readable */
-    background-blend-mode: multiply;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .login-container {
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    padding: 20px;
-    border-radius: 5px;
-  }
-
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .login-form input[type="text"],
-  .login-form input[type="password"] {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-  }
-
-  .login-form button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-
-  .login-form button:hover {
-    background-color: #0056b3;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+<header>
+  <h2 class="logo">欢迎！</h2>
 
-<div class="bg-image">
-  <div class="login-container">
-    <form class="login-form">
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit">Login</button>
+<nav class="navigation">
+  <a href="HomePage.html">主页</a>
+  <a href="#">关于</a>
+  <a href="#">服务</a>
+  <a href="#">联系我们</a>
+  <button class="btnLogin-popup">登录</button>
+</nav>
+</header>
+
+<div class="wrapper">
+  <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+  <div class="form-box login">
+    <h2>登录</h2>
+    <form action="#">
+      <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="email" required>
+        <label>邮箱</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required>
+        <label>密码</label>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">记住密码</label>
+        <a href="#">忘记密码？</a>
+      </div>
+      <button type="submit" class="btn">登录</button>
+      <div class="login-register">
+        <p>没有账户？<a href="#" class="register-link">注册</a></p>
+      </div>
     </form>
   </div>
+
+  <div class="form-box register">
+    <h2>注册</h2>
+    <form action="#">
+      <div class="input-box">
+        <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+        <input type="text" required>
+        <label>用户名</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="email" required>
+        <label>邮箱</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required>
+        <label>密码</label>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">我同意条款和条件</label>
+       
+      </div>
+      <button type="submit" class="btn">注册</button>
+      <div class="login-register">
+        <p>已经有账户？<a href="#" class="login-link">登录</a></p>
+      </div>
+    </form>
+  </div>
+
+  
 </div>
+
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 </html>
