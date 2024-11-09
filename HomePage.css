@@ -1,71 +1,238 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box ;
-    font-family: 'Poppins',sans-serif;
+@font-face {
+  font-family: Millik;
+  font-weight: 700;
+  src: url(./asset/font/Millik.c3f91cb.ttf) format("truetype");
+  text-rendering: optimizeLegibility;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('HomePage.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 4rem;
 }
 
-.navigation a {
-    position: absolute; 
-    top: 0;
-    right: 0;
-    font-size: 2em;
-    color:#d4b61e;
-    text-decoration: none;
-    font-weight: 1000;
-    margin-left: 40px;
+:root {
+  --post-spacing: 1.78vw;
+  --post-size: 25vw;
+  --mask-size: 100vw;
 }
 
-.navigation a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #d4b61e;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: all .5s;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Millik, Arial, sans-serif;
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.navigation a:hover::after{
-    transform-origin: left;
-    transform: scaleX(1);
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffc850;
+  background-image: url(Login.jpg);/*放图片*/
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  -webkit-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+  background-image: url(Login.jpg);/*放图片*/
+}
+
+.title p {
+  font-size: 4rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 30px;
+  color: #424141;
+}
+
+#banner {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: calc(var(--post-size) / 0.72);
+  -webkit-mask: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDE0NDAgNTAwIiBpZD0iaiI+CiAgPHBhdGggZmlsbD0icmdiKDIwMCwyMDAsMjAwKSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMCAwczI3NS4wNCAxMDAgNzIwIDEwMFMxNDQwIDAgMTQ0MCAwdjUwMHMtMjc1LjA0LTEwMC03MjAtMTAwUzAgNTAwIDAgNTAwVjB6Ii8+Cjwvc3ZnPgo=);
+  mask: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDE0NDAgNTAwIiBpZD0iaiI+CiAgPHBhdGggZmlsbD0icmdiKDIwMCwyMDAsMjAwKSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMCAwczI3NS4wNCAxMDAgNzIwIDEwMFMxNDQwIDAgMTQ0MCAwdjUwMHMtMjc1LjA0LTEwMC03MjAtMTAwUzAgNTAwIDAgNTAwVjB6Ii8+Cjwvc3ZnPgo=);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: var(--mask-size);
+  mask-size: var(--mask-size);
+  position: absolute;
+  top: 10%;
+}
+
+#banner .img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  float: left;
+  height: calc(var(--post-size) / 0.72);
+  -webkit-transform: translate(13.39vw, 0);
+  transform: translate(13.39vw, 0);
+  -webkit-animation: admission 1.5s;
+  animation: admission 1.5s;
+}
+
+#banner .img-wrapper .img-box {
+  height: 100%;
+  display: inline-block;
+  margin-right: var(--post-spacing);
+  position: relative;
+  cursor: pointer;
+}
+
+#banner .img-wrapper .img-box .info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(23, 23, 23, 0.5);
+  text-align: center;
+  color: #fff9f1;
+  font-size: 4rem;
+}
+
+#banner .img-wrapper .img-box img {
+  width: var(--post-size);
+  height: 100%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#banner .img-wrapper .img-box:last-child {
+  -webkit-transform: translate(-160.68vw, 0);
+  transform: translate(-160.68vw, 0);
+}
+
+.btn-group {
+  height: 15vh;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.btn-group .btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #171717;
+  background-color: #fff;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.btn-group .btn:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  background-color: #000;
+}
+
+.btn-group .btn:hover .icon {
+  fill: #fff;
+}
+
+.btn-group .btn .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-group .btn .right {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.img-list {
+  left: 0;
+}
+
+.backBtn {
+  position: absolute; 
+  left: 980px; /* 距离左边的距离 */
+  bottom: 10%;
+  z-index: 1000; /* 确保按钮在页面其他内容之上 */
+}
+
+.goback {
+  padding: 10px 20px; /* 按钮内边距 */
+  font-size: 1.6rem; /* 文字大小 */
+  color: #000000; /* 文字颜色 */
+  background-color: #000000; /* 按钮背景颜色 */
+  border: none; /* 无边框 */
+  border-radius: 5px; /* 按钮圆角 */
+  cursor: pointer; /* 鼠标悬停时显示指针 */
+  outline: none; /* 点击时不显示轮廓 */
+  transition: background-color 0.3s ease; /* 背景色渐变效果 */
+}
+
+.goback:hover {
+  background-color: #e0782e; /* 鼠标悬停时的背景颜色 */
+}
+
+.goback:focus {
+  background-color: #fff649; /* 点击时的背景颜色 */
+}
+
+.goback h3 {
+  margin: 0; /* h3标签的外边距 */
+  font-weight: normal; /* 字体不加粗 */
 }
 
 
-.searchbox {
-    position: relative; /* 使用相对定位，这样input的绝对定位就是相对于.searchbox */
-    width: 1000px; /* 搜索框的宽度，可以根据实际需求调整 */
-    height: 500px; /* 搜索框的高度，可以根据实际需求调整 */
-    margin: auto; /* 水平居中 */
-    top: 0; /* 从顶部开始 */
-    left: 0; /* 从左侧开始 */
+@-webkit-keyframes admission {
+  0% {
+    -webkit-transform: translate(140vw, 0);
+    transform: translate(140vw, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(13.39vw, 0);
+    transform: translate(13.39vw, 0);
+  }
 }
 
-.searchbox input[type="search"] {
-    position: absolute; /* 使用绝对定位 */
-    top: 30%; /* 垂直方向上从中间开始 */
-    left: 50%; /* 水平方向上从中间开始 */
-    transform: translate(-50%, -50%); /* 移动元素到中心位置 */
-    width: 70%; /* 输入框宽度，可以根据实际需求调整 */
-    height: 40px; /* 输入框高度，可以根据实际需求调整 */
-    padding: 10px; /* 输入框内部的填充 */
-    border: none; /* 去掉输入框边框 */
-    border-radius: 5px; /* 输入框圆角 */
-    font-size: 16px; /* 输入框字体大小 */
-    box-sizing: border-box; /* 边框和内边距包含在宽度和高度内 */
-    background: transparent; /* 设置输入框背景为透明 */
-    outline: none; /* 去除输入框的外边框 */
+@keyframes admission {
+  0% {
+    -webkit-transform: translate(140vw, 0);
+    transform: translate(140vw, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(13.39vw, 0);
+    transform: translate(13.39vw, 0);
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
