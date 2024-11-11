@@ -1,0 +1,334 @@
+/*- commons -*/
+
+body{
+	
+}
+
+html{
+	background: #efefef;
+}
+
+#contbx{
+	margin-bottom: 30px;
+}
+
+
+#blcoks{
+	/*width: 1200px;*/
+	position: relative;
+	/*margin: 0 auto;*/
+}
+
+#blcoks .elmt-Inner{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#blcoks .block-elmt{
+	padding: 30px 0px;
+}
+
+#blcoks .block-elmt .block-head{
+	height: 75px;
+	margin-bottom: 10px;
+}
+
+#blcoks .block-content{
+	height: 526px\0;
+}
+
+#blcoks .block-elmt .block-head .block-ttl span{
+	font-size: 30px;
+	line-height: 75px;
+}
+
+#blcoks .block-elmt .block-head .block-ttl .subCage{
+	display: inline-block;
+	margin-left: 12px;
+}
+
+#blcoks .block-elmt .block-head .block-ttl .subCage .x-item{
+	display: inline-block;
+	font-size: 14px;
+	color: #666666;
+	border-left: 2px solid #d8d5d5;
+	float: left;
+	padding: 0px 9px;
+	line-height: 14px;
+	cursor: pointer;
+}
+
+#blcoks .block-elmt .block-head .block-ttl .subCage .x-item:hover{
+	color: #af2d30;
+}
+
+#blcoks .block-elmt .block-head .more-group{
+	float: right;
+	line-height: 75px;
+}
+
+#blcoks .block-elmt .block-head .more-group span{
+	font-size: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-bottom: 2px;
+}
+
+#blcoks .block-elmt .block-head .more-group img{
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#blcoks .block-elmt .classCard{
+	width: 195px;
+	height: 230px;
+	padding: 20px 12.5px;
+	background: white;
+	float: left;
+}
+
+#blcoks .block-elmt .classCard .x-item{
+	width: 65px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	float: left;
+	font-size: 14px;
+	color: #414141;
+}
+
+#blcoks .block-elmt .classCard .x-item:hover{
+	color:#c6040a;
+	cursor: pointer;
+}
+
+#blcoks .block-elmt .cdCard{
+	width: 185px;
+	height: 245px;
+	background: white;
+	float: left;
+	margin-right: 18px;
+	margin-bottom: 18px;
+	display: inline-block;
+}
+
+#blcoks .block-elmt .noMagrin{
+	margin-right: 0px;
+}
+
+#blcoks .block-elmt .cdCard .imgs{
+	width: 185px;
+	height: 185px;
+	background: white;
+	cursor: pointer;
+}
+
+#blcoks .block-elmt .cdCard .imgs img{
+	width: 165px;
+	height: 165px;
+	margin: 10px;
+}
+
+#blcoks .block-elmt .cdCard .card-name{
+	padding: 0px 15px;
+}
+
+#blcoks .block-elmt .cdCard .card-name span{
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#blcoks .block-elmt .cdCard .card-name span:hover{
+	color: #c6040a;
+	
+}
+
+#blcoks .block-elmt .cdCard .card-year{
+	padding: 0px 15px;
+	font-size: 13px;
+    color: #999999;
+}
+
+#blcoks .block-elmt .more-group:hover{
+	color: #c6040a;
+}
+
+#blcoks .block-elmt .more-group .icons{
+	height: 14px;
+	width: 12px;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(C:/Visual/BlackMythWuKong/WukongWeb/img/hover.png);
+	background-repeat: no-repeat;
+}
+
+#blcoks .block-elmt .more-group:hover .icons{
+	background-image: url(C:/Visual/BlackMythWuKong/WukongWeb/img/hoverR.png);
+}
+
+/*-------*/
+
+
+/*- search box -*/
+
+#searchBlock{
+	width: 100%;
+	min-width: 1200px;
+	font-size: 14px;
+	position: relative;
+}
+
+#searchBlock .backImg{
+	width: 100%;
+}
+
+#searchBlock .bxInner{
+	width: 1200px;
+	height: 115px;
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	margin-left: -600px;
+	z-index: 2;
+
+}
+
+#searchBlock .searchs{
+	width: 780px;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 2px solid #c50012;
+	background: white;
+	behavior: url(../../lib/js/PIE.htc);
+}
+
+#searchBlock .searchs .icons{
+	width: 92px;
+	height: 48px;
+	padding-right: 18px;
+	text-align: right;
+	float: right;
+}
+
+#searchBlock .searchs .icons img{
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+#searchBlock .searchs .selectbx{
+	width: 124px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+	line-height: 20px;
+	margin-top: 15px;
+	text-align: center;
+	position: relative;
+	border-right: 2px solid #c50012;
+}
+
+#searchBlock .searchs .selectbx .trigge span{
+	 color: #a6a6a6;
+}
+
+#searchBlock .searchs .selectbx img{
+	vertical-align: middle;
+	margin-bottom: 3px;
+	margin-left: 3px;
+}
+
+#searchBlock .searchs .selectbx .selectList{
+	position: absolute;
+	width: 124px;
+	top: 36px;
+	left: 0px;
+	background: white;
+	display: none;
+	box-shadow: 0px 3px 3px #AEAEAE;
+	z-index: 9;
+}
+
+#searchBlock .searchs .selectbx .selectList li{
+	height: 36px;
+	line-height: 36px;
+}
+
+#searchBlock .searchs .selectbx .selectList li:hover{
+	background: #EFEFEF;
+}
+
+#searchBlock .searchs .inpbx{
+	width: 480px;
+	height: 50px;
+	position: relative;
+	margin-left: 145px;
+}
+
+#searchBlock .searchs .inpbx input{
+	height: 36px;
+	line-height: 36px;
+	width: 480px;
+	margin-top: 7px;
+	border: none;
+	background: transparent;
+}
+
+#searchBlock .searchs .inpbx .selectList .listbox1{
+	width: 360px;
+	background: white;
+	top: 51px;
+	left: -20px;
+	position: absolute;
+	box-shadow: 0px 3px 3px #AEAEAE;
+	z-index: 9;
+	display: none;
+}
+
+#searchBlock .areas{
+	height: 36px;
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	position: relative;
+}
+
+#searchBlock .areas .areaTerm{
+	display: inline-block;
+	cursor: pointer;
+	color: #5a5a5a;
+	margin: 0px 30px;
+	letter-spacing: 1.2px;
+	position: relative;
+}
+
+#searchBlock .areas .areaTerm .actLine{
+	 height: 2px;
+	 width: 80%;
+	 position: absolute;
+	 bottom: -3px;
+	 left: 10%;
+	 background: #c50012;
+	 display: none;
+}
+
+#searchBlock .areas .iact{
+	color: #c50012;
+}
+
+#searchBlock .areas .iact .actLine{
+	 display: block !important;
+}
+
+/*-------*/
+
+#blcoks .blockItem{
+	margin-bottom: 50px;
+}
+
+
+
+

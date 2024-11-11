@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传统音乐</title>
+    <link rel="stylesheet" href="C:/Visual/BlackMythWuKong/WukongWeb/raditionalMusic\chuantongyinyue.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="description" content="绕梁金曲,绝响重现,中华民族音乐文化遗产的优秀代表" />
+		<link rel="stylesheet" type="text/css" href="C:/Visual/BlackMythWuKong/WukongWeb/TraditionalMusic/chuantongyinyue4.css" />
+		<link rel="stylesheet" type="text/css" href="C:/Visual/BlackMythWuKong/WukongWeb/TraditionalMusic/chuantongyinyue3.css" />
+		<link rel="stylesheet" type="text/css" href="C:/Visual/BlackMythWuKong/WukongWeb/TraditionalMusic/chuantongyinyue1.css" />
+		
+		<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+		<script src="../../lib/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/js/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/js/json2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/js/cookie.js?version=2002120" type="text/javascript" charset="utf-8"></script>
+		<script src="../../comps/configs/config.js?version=191115" type="text/javascript" charset="utf-8"></script>
+
+		<!--swiper plugin-->
+		<link rel="stylesheet" type="text/css" href="C:/Visual/BlackMythWuKong/WukongWeb/TraditionalMusic/chuantongyinyue6.css" />
+		<script src="../../lib/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<!---->
+
+		<!--scroll bar-->
+		<link rel="stylesheet" type="text/css" href="C:/Visual/BlackMythWuKong/WukongWeb/TraditionalMusic/chuantongyinyue5.css" />
+		<script src="../../lib/js/scrollbar.min.js" type="text/javascript" charset="utf-8"></script>
+		<!---->
+
+		<link rel="stylesheet" type="text/css" href="C:/Visual/BlackMythWuKong/WukongWeb/TraditionalMusic/chuantongyinyue2.css" />
+		<script src="../../lib/js/adipoli.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--[if lte IE 7]>
+			 <link rel="stylesheet" type="text/css" href="iehack.css?version=190626"/>
+		<![endif]-->
+
+		<script src="C:/Visual/BlackMythWuKong/WukongWeb/TraditionalMusic/chuantongyinyue7.css" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+		
+		
+	  	
+		</style>
+		
+		  	<script type="text/javascript">
+				//$(document).ready(function() {
+				/**
+				$.post('http://zhongshu.cdcgcart.cn/User/User/login' , 
+							{"account":"zhongshu003","pwd":"china1896","platformCode":"LCP"},
+							function(result,status){
+								setCookie("userinfo",JSON.stringify(result.payload));
+							}
+						);	*/
+					//console.log("userinfo=" + ckFcy.getC("userinfo"));
+			//	});
+				
+			//	function setCookie(name, value) { 
+		//			var exp = new Date(); 
+			//		exp.setTime(exp.getTime() + 30 * 24 * 60 * 60 * 1000); 
+			//		document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + ";path=/"; 
+			//	}
+				
+				
+		</script>
+
+		<title>中华民族音乐资源数据库</title>
+</head>
+	
+
+	<body>
+		<!--[if lt IE 9]>
+		       <p class="ieTips">您的浏览器版本过低，为了不影响使用体验，请升级浏览器！</p>
+		<![endif]-->
+		<div id="bkBoard">
+			<div class="bk-real"></div>
+			<div class="boards">
+				<div id="loginBk"></div>
+				<div id="agreement"></div>
+			</div>
+		</div>
+		<div id="outTips">
+			<div class="backSee"></div>
+			<div class="backText"></div>
+		</div>
+		
+		<div id="headbx"> ==$0
+			<img class="backImg" src="C:/Visual/BlackMythWuKong/WukongWeb/img/HDback.jpg">
+			<div class="bxInner" onselectstart="return false;"></div>
+			</div>
+		<div id="contbx">
+			
+			<div id="searchBlock">
+				<img class="backImg" src="C:/Visual/BlackMythWuKong/WukongWeb/img/back.jpg"/>
+				<div class="bxInner">
+
+					<div class="searchs">
+
+						<div class="icons">
+							<img src="C:/Visual/BlackMythWuKong/WukongWeb/img/sicon.png" />
+						</div>
+
+						<div class="selectbx">
+							<div class="trigger">
+								<span>全字段</span>
+								<img src="C:/Visual/BlackMythWuKong/WukongWeb/img/trans.png" />
+							</div>
+							<ul class="selectList">
+								<li psid="1" class="selected">全字段</li>
+								<li psid="2">题名</li>
+								<li psid="3">主题词</li>
+								<li psid="5">出版者</li>
+							</ul>
+						</div>
+
+						<div class="inpbx">
+							<input name="seek" placeholder="搜索专辑、单曲" />
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div id="blcoks">
+
+				 <div class="block-elmt">
+				 	  <div class="elmt-Inner">
+				 	  		<div class="block-head">
+						 	  	  <a target="_blank" href="../seek/index.html?&fatype=0" class="more-group">
+						 	  	  	  <span>查看更多</span>
+						 	  	  	  <div class="icons"></div>
+						 	  	  </a>
+						 	  	  <div class="block-ttl">
+						 	  	  	  <span>戏曲音乐</span>
+						 	  	  	  <div class="subCage">
+						 	  	  	  	  <div class="x-item" icode="1382">京剧</div>
+						 	  	  	  	  <div class="x-item" icode="1601">粤剧</div>
+						 	  	  	  	  <div class="x-item" icode="1816">潮剧</div>
+						 	  	  	  	  <div class="x-item" icode="1509">越剧</div>
+						 	  	  	  	  <div class="x-item" icode="1388">评剧</div>
+		 	  	  	  	                  
+		 	  	  	  	                  <div class="x-item" icode="1954">生行</div>
+		 	  	  	  	                  <div class="x-item" icode="1955">旦行</div>
+		 	  	  	  	                  <div class="x-item" icode="2401">净行</div>
+							 	  	  	  <div class="x-item" icode="2603">丑行</div>
+							 	  	  	  							 						 	  	  	  
+						 	  	  	  </div>
+						 	  	  </div>			 	  	  
+						 	  </div>
+						 	  <div class="block-content clearfix">
+						 	  	  
+						 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20d28012c">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis" title="朝阳沟"><span>朝阳沟</spam></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f994cd00e1">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis" title="搜书院"><span>搜书院</spam></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>艺声唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="40289c8162f6fa420162f6fc0d300072">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis" title="中国戏曲艺术家唱腔选—京剧 梅兰芳"><span>中国戏曲艺术家唱腔选—京剧 梅兰芳</spam></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="40289c8162f6fa420162f6fc0bf00045">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis"><span>程砚秋唱片选辑（一）</span></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="40289c8162f6fa420162f6fc1bd20270">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name"><span>钗头凤</span></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard noMagrin" iab="40289c8162f6fa420162f6fc1bf20274">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name"><span>元宵谜</span></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>人民唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>78转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  
+						 	  	  <div class="cdCard" iab="4028a6816a4966ec016a49691eec0011">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis" title="英台抗婚"><span>英台抗婚</spam></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span></span>
+						 	  	  	  	  <span></span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f99cf201bf">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis" title="寶蓮燈"><span>寶蓮燈</spam></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>艺声唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd205350069">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis" title="白蛇传（上）游湖、盗草"><span>白蛇传（上）游湖、盗草</spam></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f994b900e0">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis"><span>春香傳</span></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>艺声唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard" iab="40289c8162f6fa420162f6fc0c23004c">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name ellipsis"><span>川剧—访白袍·马房放奎·窦娥冤</span></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  <div class="cdCard noMagrin" iab="40289c81697f7b5e01697fd2042d0050">
+						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+						 	  	  	  <div class="card-name"><span>花木蘭</span></div>
+						 	  	  	  <div class="card-year">
+						 	  	  	  	  <span>中国唱片</span>
+						 	  	  	  	  <span>/</span>
+						 	  	  	  	  <span>33转唱片</span>
+						 	  	  	  </div>
+						 	  	  </div>
+						 	  	  
+						 	  </div>
+				 	  </div>				 	  
+				 </div>
+                 
+                 <div class="block-elmt" style="background: #f5f5f5;">
+                 	  <div class="elmt-Inner">
+					 	  <div class="block-head">
+					 	  	  <a target="_blank" href="../seek/index.html?&fatype=1" class="more-group">
+					 	  	  	  <span>查看更多</span>
+					 	  	  	  <div class="icons"></div>
+					 	  	  </a>
+					 	  	  <div class="block-ttl">
+					 	  	  	  <span>曲艺音乐</span>
+					 	  	  	  <div class="subCage">
+					 	  	  	  	  <div class="x-item" icode="1229">京韵大鼓</div>
+					 	  	  	  	  <div class="x-item" icode="1227">河南坠子</div>
+					 	  	  	  	  <div class="x-item" icode="2568">相声</div>
+					 	  	  	  	  <div class="x-item" icode="1297">评弹</div>
+					 	  	  	  	  <div class="x-item" icode="1231">西河大鼓</div>
+					 	  	  	  	  <div class="x-item" icode="1817">天津时调</div>
+					 	  	  	  	  <div class="x-item" icode="2788">单弦</div>					 	  	  	  	  
+					 	  	  	  	  <div class="x-item" icode="1305">粤曲</div>	
+					 	  	  	  	  <div class="x-item" icode="1230">梅花大鼓</div>
+					 	  	  	  </div>
+					 	  	  </div>			 	  	  
+					 	  </div>
+					 	  <div class="block-content clearfix">
+					 	  	  <!--<div class="classCard">			 	  	  	  
+					 	  	  	  <div class="x-item" icode="2619">北京琴书</div>
+					 	  	  	  <div class="x-item" icode="3281">奉天大鼓</div>
+					 	  	  	  <div class="x-item" icode="3356">关东大鼓</div>
+					 	  	  	  <div class="x-item" icode="1227">河南坠子</div>
+					 	  	  	  <div class="x-item" icode="1229">京韵大鼓</div>
+					 	  	  	  <div class="x-item" icode="1329">乐亭大鼓</div>
+					 	  	  	  <div class="x-item" icode="2798">南词</div>
+					 	  	  	  <div class="x-item" icode="3307">南音</div>
+					 	  	  	  <div class="x-item" icode="1305">粤曲</div>
+					 	  	  	  <div class="x-item" icode="3370">独脚戏</div>
+					 	  	  	  <div class="x-item" icode="2792">三弦书</div>
+					 	  	  	  <div class="x-item" icode="2790">莲花落</div>
+					 	  	  	  <div class="x-item" icode="3355">天津大鼓</div>
+					 	  	  	  <div class="x-item" icode="1817">天津时调</div>
+					 	  	  	  <div class="x-item" icode="1231">西河大鼓</div>
+					 	  	  	  <div class="x-item" icode="2567">山东快书</div>				 	  	  	  
+					 	  	  	  <div class="x-item" icode="1235">山东琴书</div>
+					 	  	  	  <div class="x-item" icode="2796">山东柳琴</div>
+					 	  	  	  <div class="x-item" icode="1230">梅花大鼓</div>
+					 	  	  	  <div class="x-item" icode="1819">四川扬琴</div>
+					 	  	  	  <div class="x-item" icode="1258">四川清音</div>
+					 	  	  </div>-->
+					 	  	  <div class="cdCard" iab="40289c8162f6fa420162f6fc0fa300cd">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name ellipsis"><span title="弹词开篇集锦（一）">弹词开篇集锦（一）</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>中国唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="40289c8163720d63016372265779019d">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>博望坡、子斯听琴</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>中国唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd2051b0066">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name ellipsis"><span title="昭君出塞 西宫詞 忆我郎">昭君出塞 西宫詞 忆我郎</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>艺声唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f9950c00e8">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>遠望鄉里</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>艺声唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f9970a0129">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name ellipsis"><span title="黛玉焚稿 哭塔 瀟湘夜雨 霍定金私弔">黛玉焚稿 哭塔 瀟湘夜雨 霍定金私弔</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>艺声唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard noMagrin" iab="4028a6816a47be76016a47f9958600f6">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>宮怨</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>艺声唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="40289c8163720d6301637216bad3007a">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name ellipsis"><span title="红线女唱腔艺术选辑（一）">红线女唱腔艺术选辑（一）</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>中国唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd206f40093">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>空城計 戏迷</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>中国唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f997450131">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>孔雀東南飛</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>艺声唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f997620135">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>杜十娘·文姬歸漢</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>艺声唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard" iab="4028a6816ab52b1b016ab52f2ebb0111">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>中国伝統音樂集成</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>哥伦比亚唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>33转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  	  <div class="cdCard noMagrin" iab="40289c8163ee00100163ee03bf2f01c4">
+					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+					 	  	  	  <div class="card-name"><span>卜算子-咏梅</span></div>
+					 	  	  	  <div class="card-year">
+					 	  	  	  	  <span>中国唱片</span>
+					 	  	  	  	  <span>/</span>
+					 	  	  	  	  <span>78转唱片</span>
+					 	  	  	  </div>
+					 	  	  </div>
+					 	  </div>
+					  </div> 
+                </div>
+				 
+				 <div class="block-elmt">
+				 	  <div class="elmt-Inner">
+					 	  <div class="block-head">
+					 	  	  <a target="_blank" href="../seek/index.html?&fatype=2" class="more-group">
+					 	  	  	  <span>查看更多</span>
+					 	  	  	  <div class="icons"></div>
+					 	  	  </a>
+					 	  	  <div class="block-ttl">
+					 	  	  	  <span>歌曲音乐</span>
+					 	  	  	  <div class="subCage">
+					 	  	  	  	  <div class="x-item" icode="2169" fullName="群众歌曲">群众歌曲</div>
+						 	  	  	  <div class="x-item" icode="2166" fullName="汉族小调">汉族小调</div>
+						 	  	  	  <div class="x-item" icode="2170" fullName="艺术歌曲">艺术歌曲</div>
+						 	  	  	  <div class="x-item" icode="2164" fullName="汉族山歌">汉族山歌</div>
+						 	  	  	  <div class="x-item" icode="2173" fullName="歌剧歌曲">歌剧歌曲</div>
+						 	  	  	  <div class="x-item" icode="2171" fullName="影视歌曲">影视歌曲</div>
+						 	  	  	  <div class="x-item" icode="2172" fullName="儿童歌曲">儿童歌曲</div>
+					 	  	  	  </div>
+					 	  	  </div>			 	  	  
+					 	  </div>
+					 	  <div class="block-content clearfix">
+				 	  	  <!--<div class="classCard">
+				 	  	  	  <div class="x-item" icode="2173" fullName="歌剧歌曲">歌剧</div>
+				 	  	  	  <div class="x-item" icode="2170" fullName="艺术歌曲">艺术</div>
+				 	  	  	  <div class="x-item" icode="2171" fullName="影视歌曲">影视</div>
+				 	  	  	  <div class="x-item" icode="2172" fullName="儿童歌曲">儿童</div>
+				 	  	  	  <div class="x-item" icode="2169" fullName="群众歌曲">群众</div>
+				 	  	  	  <div class="x-item" icode="2166" fullName="汉族小调">汉族</div>
+				 	  	  	  <div class="x-item" icode="1893" fullName="壮族歌曲">壮族</div>
+				 	  	  	  <div class="x-item" icode="1708" fullName="回族歌曲">回族</div>
+				 	  	  	  <div class="x-item" icode="1719" fullName="白族歌曲">白族</div>
+				 	  	  	  
+				 	  	  	  <div class="x-item" icode="1716" fullName="侗族歌曲">侗族</div>
+				 	  	  	  <div class="x-item" icode="1723" fullName="傣族歌曲">傣族</div>
+				 	  	  	  <div class="x-item" icode="1714" fullName="藏族歌曲">藏族</div>
+				 	  	  	  
+				 	  	  	  <div class="x-item" icode="2586" fullName="美国歌曲">美国</div>
+				 	  	  	  <div class="x-item" icode="2580" fullName="法国歌曲">法国</div>
+				 	  	  	  <div class="x-item" icode="2576" fullName="捷克歌曲">捷克</div>
+				 	  	  	  			 	  	  	  				 	  	  	  
+				 	  	  	  <div class="x-item" icode="2625" fullName="突尼斯歌曲">突尼斯</div>
+				 	  	  	  <div class="x-item" icode="2629" fullName="摩洛哥歌曲">摩洛哥</div>
+				 	  	  	  <div class="x-item" icode="2574" fullName="俄罗斯歌曲">俄罗斯</div>
+				 	  	  	  
+				 	  	  	  <div class="x-item" icode="2597" fullName="巴基斯坦歌曲">巴基斯坦</div>
+				 	  	  	  <div class="x-item" icode="2614" fullName="格鲁吉亚歌曲">格鲁吉亚</div>
+				 	  	  	  <div class="x-item" icode="2589" fullName="哥伦比亚歌曲">哥伦比亚</div>				 	  	  	  
+				 	  	  	
+				 	  	  </div>-->
+				 	  	  <div class="cdCard" iab="40289c8163720d630163720dd0600002">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="啊，我的太阳（施鸿鄂独唱歌曲选）">啊，我的太阳（施鸿鄂独唱歌曲选）</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20a2a00e3">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>阿娜依</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20cae011e">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>白毛女</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20d550131">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="北京的旋律——歌剧选曲 电影歌曲">北京的旋律——歌剧选曲 电影歌曲</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd207bc00a7">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>春之舞</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard noMagrin" iab="4028a6816a1ed29d016a1ed61069009a">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>草原战歌</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a1ed29d016a1ed60ed2006d">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="永远高歌“东方红”">永远高歌“东方红”</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd204360051">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>聶耳歌曲选</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20a4c00e6">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="漁光曲 电影歌曲（1934-1937）">漁光曲 电影歌曲（1934-1937）</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a1ed29d016a1ed60ec1006b">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="地拉那—北京 阿尔巴尼亚国家歌舞团訪华演出节目选">地拉那—北京 阿尔巴尼亚国家歌舞团訪华演出节目选</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20a5900e7">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>大合唱——井岡山</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard noMagrin" iab="4028a6816ab52b1b016ab52f2f6a0124">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>歌剧 紅珊瑚（选曲）</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  </div>
+				 	  </div>	
+				 </div>
+				 
+				 <div class="block-elmt" style="background: #f5f5f5;">
+				 	  <div class="elmt-Inner">
+					 	  <div class="block-head">
+					 	  	  <a target="_blank" href="../seek/index.html?&fatype=4" class="more-group">
+					 	  	  	  <span>查看更多</span>
+					 	  	  	  <div class="icons"></div>
+					 	  	  </a>
+					 	  	  <div class="block-ttl">
+					 	  	  	  <span>器乐音乐</span>
+					 	  	  	  <div class="subCage">
+					 	  	  	  	 <div class="x-item" icode="2233">广东音乐</div>
+						 	  	  	  <div class="x-item" icode="2361">笛子</div>
+						 	  	  	  <div class="x-item" icode="2371">二胡</div>
+						 	  	  	  <div class="x-item" icode="2295">柳琴</div>
+					 	  	  	  	  <div class="x-item" icode="2292">古琴</div>
+						 	  	  	  <div class="x-item" icode="2293">古筝</div>
+						 	  	  	  <div class="x-item" icode="3132">唢呐</div>					 	  	  	  
+						 	  	  	  <div class="x-item" icode="2294">琵琶</div>
+						 	  	  	  <div class="x-item" icode="2381">马头琴</div>
+					 	  	  	  </div>
+					 	  	  </div>			 	  	  
+					 	  </div>
+					 	  <div class="block-content clearfix">
+				 	  	
+				 	  	  <div class="cdCard" iab="40289c8162f6fa420162f6fc266603b3">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>阿卡--耶尔加</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>78转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816ab52b1b016ab52f27c00070">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>春節序曲</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816ab52b1b016ab52f27d20072">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>春江花月夜</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd2045e0055">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>潮州音楽（一）</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a1ed29d016a1ed60fa40083">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>革命交响音乐 沙家浜</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard noMagrin" iab="40289c81697f7b5e01697fd2091d00cc">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>花間蝶</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a1ed29d016a1ed60beb0018">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>东方红——管乐合奏</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816ab52b1b016ab52f26fe005b">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>高山流水</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20a1c00e2">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>海南音乐——万花灯</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f99afd0190">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>金蛇狂舞</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd205080064">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>民乐合奏-桂林山水</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard noMagrin" iab="4028a6816a47be76016a47f994ea00e4">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>昭君出塞</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  </div>
+				 	  </div>
+				 </div>
+				 
+				 <div class="block-elmt">
+				 	  <div class="elmt-Inner">
+					 	  <div class="block-head">
+					 	  	  <a target="_blank" href="../seek/index.html?&fatype=3" class="more-group">
+					 	  	  	  <span>查看更多</span>
+					 	  	  	  <div class="icons"></div>
+					 	  	  </a>
+					 	  	  <div class="block-ttl">
+					 	  	  	  <span>歌舞音乐</span>
+					 	  	  	  <div class="subCage">
+					 	  	  	  	  <div class="x-item" icode="2215">舞剧音乐</div>	
+					 	  	  	  	  <div class="x-item" icode="2211" fullName="近现代歌舞">近现代歌舞</div>		
+					 	  	  	  	  <div class="x-item" icode="2513">木卡姆</div>					 	  	  	  	 
+					 	  	  	  </div>
+					 	  	  </div>			 	  	  
+					 	  </div>
+					 	  <div class="block-content clearfix">
+				 	  	
+				 	  	  <div class="cdCard" iab="4028a6816a1ed29d016a1ed60d660042">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="芭蕾舞劇选曲——白毛女">芭蕾舞劇选曲——白毛女</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f996b2011d">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>春暖花開</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20a6f00e9">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>蓝色多瑙河</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816ab52b1b016ab52f3171014e">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="毛主席的战士最听党的话">八月桂花遍地开</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd2086b00bb">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>舞剧“小刀会”选曲</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard noMagrin" iab="40289c8163720d630163720dd16c0015">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>雪山升起红太阳</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f99b9601a4">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>玫瑰花</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816ab52b1b016ab52f2fb6012c">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name ellipsis"><span title="苗岭欢歌——民族器乐曲">苗岭欢歌——民族器乐曲</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f9957200f4">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>舞劇選曲——弓舞</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f998f40159">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>舞曲 春曉曲</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>艺声唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard" iab="40289c8163720d6301637224393b0167">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>海岛之春</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  	  <div class="cdCard noMagrin" iab="40289c8162f6fa420162f6fc323904fc">
+				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
+				 	  	  	  <div class="card-name"><span>舞剧—鱼美人</span></div>
+				 	  	  	  <div class="card-year">
+				 	  	  	  	  <span>中国唱片</span>
+				 	  	  	  	  <span>/</span>
+				 	  	  	  	  <span>33转唱片</span>
+				 	  	  	  </div>
+				 	  	  </div>
+				 	  </div>
+				 	  </div>
+				 </div>
+				 
+				 
+				 
+			</div>
+
+		</div>
+		<div id="toolbar-options" class="hidden">
+			<div class="text"></div>
+		</div>
+		<div id="foot"></div>
+		<div id="linkStorage"></div>
+		<!--
+		<script src="../../lib/js/require.js?ver=" type="text/javascript" charset="utf-8" data-main="../../comps/reqs/comReqs.js"></script>-->
+		<!--<script src="../../comps/reqs/comReqs.js?version=191119" type="text/javascript" charset="utf-8"></script>-->
+		
+		<script src="../../lib/js/require.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../comps/reqs/comReqs.js?version=191119" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

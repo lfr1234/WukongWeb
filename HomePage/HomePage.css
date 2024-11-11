@@ -33,7 +33,7 @@ a {
 body {
   font-family: 'Arial', sans-serif;
   background-color: #ffc850;
-  background-image: url(Login.jpg);/*放图片*/
+  background-image: url(C:/Visual/BlackMythWuKong/WukongWeb/img/Login.jpg);/*放图片*/
 }
 
 .title {
@@ -42,7 +42,7 @@ body {
   top: 5%;
   -webkit-transform: translate(-50%, -5%);
   transform: translate(-50%, -5%);
-  background-image: url(Login.jpg);/*放图片*/
+  background-image: url(C:/Visual/BlackMythWuKong/WukongWeb/img/Login.jpg);/*放图片*/
 }
 
 .title p {

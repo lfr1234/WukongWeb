@@ -1,0 +1,1320 @@
+/*- head å¸¸è§„ -*/
+
+#headbx {
+	height: 100px;
+	width: 100%;
+	min-width: 1200px;
+	position: relative;
+	z-index: 15;
+}
+
+.bxInner {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.imgbox {
+	position: relative;
+}
+
+#headbx a:hover {
+	text-decoration: none;
+}
+
+.vevoidbx{
+	display: none;
+}
+
+.ieTips{
+	text-align: center;
+}
+
+/*-------*/
+
+
+/*- logo -*/
+
+#logobox {
+	float: left;
+	height: 50px;
+	width: 360px;
+	margin-top:25px;
+	position: relative;
+	cursor: pointer;
+}
+
+#logobox .imgbox {
+	height: 50px;
+	/* width: 48px; */
+	vertical-align: middle;
+}
+
+#logobox .imgbox img{
+	 height: 50px;
+}
+
+#logobox span {
+	font-size: 15px;
+	color: white;
+	float: left;
+	margin-top: -36px;
+	margin-left: 60px;
+}
+
+#schoolLogo {
+	float: left;
+	height: 80px;
+	display: none;
+}
+
+#schoolLogo img {
+	height: 50px;
+	width: 50px;
+	margin-top: 0px;
+}
+
+
+/*-------*/
+
+
+/*- head links -*/
+
+#headbx .backImg{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+#headLinks {
+	float: right;
+	height: 80px;
+	padding-right: 35px;
+	margin-top: 35px;
+	position: relative;
+}
+
+#headLinks .nvterm {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 25px;
+}
+
+#headLinks a {
+	font-size: 13px;
+	color: #c3c3c3;
+	margin: 0px 7px;
+}
+
+#headLinks .linksLine {
+	height: 56px;
+	width: 1px;
+	position: absolute;
+	background: #c3c3c3;
+	right: 0px;
+	top: 0px;
+}
+
+#headLinks .linkAct {
+	color: #FE5A02;
+}
+
+#headLinks .vipLink {
+	display: none;
+}
+
+#homePage{
+	float: right;
+	width: 120px;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	font-size: 14px;
+}
+
+#homePage:hover{
+	background: #c6040a;
+	color: white;
+}
+
+#headbx .classBox{
+	float: right;
+	width: 120px;
+	text-align: center;
+	
+	height: 100px;
+	position: relative;
+}
+
+#headbx .classBox:hover{
+	background: #c6040a;
+	color: white;
+}
+
+#headbx .classBox .classTtl{
+	display: block;
+	height: 100px;
+	width: 120px;
+	line-height: 100px;
+	font-size: 14px;
+	
+	cursor: pointer;
+}
+
+#headbx .moreSeek{
+	position: absolute;
+	width: 740px;
+	background: white;
+	top:100px;
+	left: -620px;
+	box-shadow: 0px 3px 6px #999999;
+    display: none;
+    
+    animation: show 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#headbx .classBox:hover .moreSeek{
+    display: block;
+}
+
+@keyframes show{
+	from{
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+/*-------*/
+
+#loginbox {
+	float: right;
+	text-align: right;
+}
+
+#loginbox a {
+	color: #706a65;
+	letter-spacing: 2px;
+	display: block;
+	width: 120px;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	font-size: 14px;
+}
+
+#loginbox a:hover{
+	background: #c6040a;
+	color: white;
+}
+
+#loginbox span{
+	display: inline-block;
+	height: 15px;
+	width: 2px;
+	vertical-align: middle;
+	background: #706a65;
+	margin: 0px 9px;
+}
+
+#exitbox {
+	float: right;
+	position: relative;
+	display: none;
+}
+
+#exitbox a {
+	font-size: 14px;
+	color: #706a65;
+	display: block;
+	width: 200px;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	float: left;
+}
+
+#exitbox .exitForPerson {
+	display: none;
+}
+
+#exitbox .exitForSchool {
+	display: none;
+}
+
+#exitbox .exitForIp{
+	 font-size: 15px;
+	 display: none;
+}
+
+#exitbox .exitForIp a{
+	  font-size: 15px;
+	 letter-spacing: 1.2px;
+	 pointer-events: none;
+}
+
+/*- foot -*/
+
+#foot {
+	/*height: 220px;*/
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	min-width: 1200px;
+	background: #414141;
+	font-size: 14px;
+	color: white;
+}
+
+#foot .connectLink{
+	float: right;
+	color: white;
+}
+
+.posFixed{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+/*-------*/
+
+
+/*- black board -*/
+
+#bkBoard {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	display: none;
+}
+
+#bkBoard .bk-real {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	left: 0px;
+	top: 0px;
+	background: black;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+#bkBoard .boards {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+}
+
+#bkBoard .loginbx {
+	width: 480px;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/*background: #fefaf9;*/
+	margin-left: -240px;
+}
+
+.loginbx .lbx-bar {
+	height: 10px;
+	width: 100%;
+	background: #232323;
+}
+
+.loginbx .lbx-ttl {
+	width: 480px;
+	position: relative;
+}
+
+.loginbx .lbx-ttl-1 {
+	margin-top: 11px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.loginbx .lbx-ttl-1 img {
+	margin-right: 15px;
+}
+
+.loginbx .lbx-ttl-2 {
+	height: 26px;
+	line-height: 26px;
+	font-size: 16px;
+	color: #666666;
+	text-align: center;
+}
+
+.loginbx .lbx-form {
+	width: 380px;
+	padding: 7px 20px;
+	border: 1px solid #dfdfdf;
+	margin: 0 auto;
+	margin-top: 22px;
+	position: relative;
+	background: #fefaf9;
+}
+
+.loginbx .lbx-form .inp-bx {
+	width: 380px;
+	height: 54px;
+	position: relative;
+	background: #fefaf9;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.loginbx .lbx-form .inp-bx .imb-bx {
+	float: left;
+	width: 38px;
+	margin-top: 15px;
+}
+
+.loginbx .lbx-form .inp-bx input {
+	height: 48px;
+	line-height: 48px\9;
+	margin-top: 3px;
+	width: 308px;
+	border: none;
+	background: transparent;
+}
+
+.loginbx .lbx-form .inp-bx-no {
+	border: none;
+}
+
+.loginbx .lbx-agment {
+	position: relative;
+	margin-top: 18px;
+	padding-left: 30px;
+}
+
+.loginbx .lbx-agment .ck-bx {
+	height: 20px;
+	width: 20px;
+	border: 1px solid #DFDFDF;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.loginbx .lbx-agment .ck-bx img {
+	vertical-align: middle;
+	float: left;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+
+.loginbx .lbx-agment .un-accept img {
+	display: none;
+}
+
+.loginbx .lbx-agment a {
+	margin-left: 8px;
+	line-height: 22px;
+	font-size: 15px;
+	color: #666666;
+}
+
+.loginbx .setIn-btn {
+	width: 420px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #232323;
+	background: #f3f3f3;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.loginbx .setIn-btn:hover {
+	background: #EFEFEF;
+}
+
+.loginbx .setIn-act .setIn-1 {
+	text-align: right;
+	padding-right: 30px;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #232323;
+	cursor: pointer;
+}
+
+.loginbx .lbx-form-in {
+	position: relative;
+	z-index: 2;
+	background: white;
+}
+
+.loginbx .err-bx {
+	width: 420px;
+	height: 42px;
+	line-height: 42px;
+	color: #666666;
+	border: 1px solid #FE5A00;
+	background: #f5f5f5;
+	position: absolute;
+	left: -1px;
+	top: -45px;
+	z-index: 1;
+	display: none;
+}
+
+.loginbx .err-bx img {
+	margin-left: 20px;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+
+.loginbx .err-bx span {
+	font-size: 14px;
+	margin-left: 14px;
+}
+
+#setIn {
+	height: 490px;
+	margin-top: -245px;
+	display: none;
+}
+
+#setIn .setIn-act {
+	margin-top: 70px;
+}
+
+#ckIn-1 {
+	height: 560px;
+	display: none;
+	margin-top: -280px;
+}
+
+#ckIn-1 .setIn-act {
+	margin-top: 18px;
+}
+
+#ckIn-1 .msk-l input {
+	width: 180px;
+}
+
+#ckIn-1 .loginbx .setIn-act {
+	margin-top: 50px;
+}
+
+#ckIn-1 .msk-l .msk-bx {
+	height: 40px;
+	width: 120px;
+	float: right;
+	margin-top: 7px;
+	cursor: pointer;
+	background: salmon;
+}
+
+#ckIn-1 .pmsk-l input {
+	width: 180px;
+}
+
+#ckIn-1 .pmsk-l .pmsk-bx {
+	height: 40px;
+	width: 120px;
+	float: right;
+	margin-top: 7px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	background: #F5F5F5;
+}
+
+#ckIn-1 .pmsk-l .pmsk-bx:hover {
+	background: #EFEFEF;
+}
+
+#ckIn-1 .pmsk-l .imb-bx img {
+	margin-top: 4px;
+}
+
+#ckIn-3 .lbx3-rs {
+	margin-top: 145px;
+}
+
+#ckIn-3 .lbx3-rs-1 {
+	text-align: center;
+	font-size: 15px;
+	color: #FE5A00;
+}
+
+#ckIn-3 .lbx3-rs-2 {
+	text-align: center;
+	color: #C3C3C3;
+	margin-top: 3px;
+}
+
+#ckIn-3 {
+	height: 490px;
+	margin-top: -245px;
+	display: none;
+}
+
+#setIn .lbx-agment span {
+	font-size: 15px;
+	color: #666666;
+	float: right;
+	margin-right: 24px;
+	cursor: pointer;
+}
+
+#setIn .setIn-btn {
+	background: #c50012;
+	color: white;
+	text-align: center;
+}
+
+#setIn .setIn-btn:hover {
+	background: #e1061a;
+}
+
+#setIn .setIn-others {
+	width: 420px;
+	font-size: 15px;
+	margin: 0 auto;
+	color: #666666;
+	margin-top: 36px;
+}
+
+#setIn .others-1 {
+	float: right;
+	cursor: pointer;
+}
+
+#setIn .others-2 img {
+	cursor: pointer;
+}
+
+
+/*-------*/
+
+
+/*- bind the phone -*/
+
+#ckIn-4 {
+	display: none;
+}
+
+#ckIn-4 .lbx4-form {
+	width: 420px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#ckIn-4 .lbx4-st1 {
+	width: 420px;
+	height: 38px;
+	border: 1px solid #c3c3c3;
+	margin-top: 14px;
+}
+
+#ckIn-4 .lbx4-st1 input {
+	width: 392px;
+	margin-left: 14px;
+	border: none;
+	height: 30px;
+	margin-top: 4px;
+	background: transparent;
+	line-height: 30px\9;
+}
+
+#ckIn-4 .lbx4-st2 {
+	margin-top: 14px;
+}
+
+#ckIn-4 .st2-inpbx {
+	width: 280px;
+	height: 38px;
+	border: 1px solid #C3C3C3;
+}
+
+#ckIn-4 .st2-icon {
+	width: 118px;
+	height: 38px;
+	border: 1px solid #C3C3C3;
+	float: right;
+}
+
+#ckIn-4 .st2-inpbx input {
+	width: 252px;
+	height: 30px;
+	margin-top: 4px;
+	border: none;
+	margin-left: 14px;
+	background: transparent;
+	line-height: 30px\9;
+}
+
+#ckIn-4 .st2-icon-btn {
+	text-align: center;
+	line-height: 38px;
+	cursor: pointer;
+	font-size: 15px;
+	background: #f5f5f5;
+	border-color: #f5f5f5;
+}
+
+#ckIn-4 .lbx-agment {
+	margin-top: 20px;
+}
+
+#ckIn-4 .lbx4-success {
+	width: 140px;
+	height: 50px;
+	line-height: 50px;
+	background: #FE5A00;
+	color: white;
+	margin: 0 auto;
+	margin-top: 40px;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#ckIn-4 .lbx4-ft {
+	text-align: right;
+}
+
+#ckIn-4 .lbx4-ft a {
+	margin-right: 20px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+
+/*-------*/
+
+
+/*- bind success -*/
+
+#ckIn-5 {
+	display: none;
+}
+
+#ckIn-5 .lbx5-form {
+	width: 420px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#ckIn-5 .lbx5-st1 {
+	width: 420px;
+	height: 38px;
+	border: 1px solid #c3c3c3;
+	margin-top: 14px;
+}
+
+#ckIn-5 .lbx5-st1 input {
+	width: 392px;
+	margin-left: 14px;
+	border: none;
+	height: 30px;
+	margin-top: 4px;
+	background: transparent;
+	line-height: 30px\9;
+}
+
+#ckIn-5 .lbx5-success {
+	width: 140px;
+	height: 50px;
+	line-height: 50px;
+	background: #FE5A00;
+	color: white;
+	margin: 0 auto;
+	margin-top: 140px;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#ckIn-5 .lbx5-ft {
+	text-align: right;
+	padding-right: 25px;
+	margin-top: 18px;
+}
+
+#ckIn-5 .lbx5-ft a {
+	font-size: 15px;
+	margin-left: 32px;
+}
+
+
+/*-------*/
+
+
+/*- login effect -*/
+
+.show {
+	animation: show 0.2s;
+	animation-fill-mode: forwards;
+	-webkit-animation: show 0.2s;
+}
+
+@keyframes show {
+	0% {
+		transform: scale(0.6);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.hide {
+	animation: hide 0.2s;
+	animation-fill-mode: forwards;
+	-webkit-animation: hide 0.2s;
+}
+
+@keyframes hide {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+}
+
+
+/*-------*/
+
+
+/*- download boards -*/
+
+#downBk .downbx {
+	width: 400px;
+	height: 340px;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -170px;
+	display: none;
+}
+
+#downBk .downbx .lbx-bar {
+	height: 10px;
+	width: 100%;
+	background: #232323;
+}
+
+#downBk .dbx-close {
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+}
+
+
+/*-------*/
+
+
+/*- download box 1 -*/
+
+#downbx1 .lbx-ttl {
+	width: 340px;
+	height: 90px;
+	padding-top: 20px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+#downbx1 .lbx-ttl .ttl-mc {
+	width: 240px;
+	margin-left: 85px;
+}
+
+#downbx1 .lbx-ttl .ttl-mc .ttl-mc2 {
+	width: 60px;
+	height: 20px;
+	margin-top: 12px;
+	color: #fe5a00;
+	line-height: 20px;
+	border: 1px solid #fe5a00;
+	text-align: center;
+}
+
+#downbx1 .lbx-ttl img {
+	float: left;
+}
+
+#downbx1 .lbx-down {
+	width: 340px;
+	padding-top: 27px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#downbx1 .lbx-down2 {
+	height: 36px;
+	margin-top: 18px;
+}
+
+#downbx1 .lbx-down2 img {
+	cursor: pointer;
+}
+
+#downbx1 .lbx-down3 {
+	margin-top: 16px;
+}
+
+#downbx1 .lbx-down3 .downbx1-btn {
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 0px 18px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+}
+
+#downbx1 .lbx-down3 .down3-btn1 {
+	background: #fe5a02;
+	color: white;
+}
+
+#downbx1 .lbx-down3 .down3-btn2 {
+	background: #f5f5f5;
+}
+
+#downbx1 .lbx-down3 .down3-btn2:hover {
+	background: #EFEFEF;
+}
+
+#downbx1 .lbx-ft {
+	width: 340px;
+	margin: 0 auto;
+	margin-top: 38px;
+	text-align: right;
+}
+
+
+/*-------*/
+
+
+/*- download box 2 -*/
+
+#downbx2 .lbx-ttl {
+	width: 340px;
+	height: 90px;
+	padding-top: 20px;
+	margin: 0 auto;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+#downbx2 .lbx-ttl .ttl-mc {
+	width: 240px;
+	margin-left: 85px;
+}
+
+#downbx2 .lbx-ttl .ttl-mc .ttl-mc2 {
+	width: 60px;
+	height: 20px;
+	margin-top: 12px;
+	color: #fe5a00;
+	line-height: 20px;
+	border: 1px solid #fe5a00;
+	text-align: center;
+}
+
+#downbx2 .lbx-ttl img {
+	float: left;
+}
+
+#downbx2 .lbx-down {
+	width: 340px;
+	padding-top: 27px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#downbx2 .lbx-down2 {
+	height: 36px;
+	margin-top: 18px;
+}
+
+#downbx2 .lbx-down2 img {
+	cursor: pointer;
+}
+
+#downbx2 .lbx-down3 {
+	margin-top: 16px;
+}
+
+#downbx2 .lbx-down3 .downbx1-btn {
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 0px 18px;
+	text-align: center;
+	line-height: 30px;
+	background: #fe5a02;
+	color: white;
+	display: inline-block;
+}
+
+#downbx2 .lbx-ft {
+	width: 340px;
+	color: #8c8c8c;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: right;
+	position: relative;
+}
+
+#downbx2 .lbx-ft img {
+	left: -3px;
+	top: 3px;
+	position: absolute;
+}
+
+
+/*-------*/
+
+
+/*- download box 3 -*/
+
+#downbx3 .lbx-ms {
+	color: #8c8c8c;
+	text-align: center;
+	margin-top: 152px;
+}
+
+
+/*-------*/
+
+
+/*- æç¤º -*/
+
+#outTips {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	padding: 15px 30px;
+	font-size: 14px;
+	z-index: 99;
+	border-radius: 5px;
+	color: white;
+	overflow: hidden;
+	display: none;
+}
+
+#outTips .backSee {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: black;
+	opacity: 0.6;
+}
+
+#outTips .backText {
+	position: relative;
+	z-index: 9;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*-------*/
+
+
+/*- agreement -*/
+
+#agreement{
+	width: 1080;
+	height: 720px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -540px;
+	margin-top: -360px;
+	display: none;
+}
+
+#agreement .agText{
+	width: 1080px;
+	height: 720px;
+	background: white;
+}
+
+#agreement .agTextInner{
+	width: 1080px;
+	margin: 0 auto;
+	text-align: center;
+	background: white;
+	padding: 60px 90px;
+	box-sizing: border-box;
+	box-shadow: 0px 18px 18px #AEAEAE;
+}
+
+#agreement .ttl {
+	text-align: center;
+	margin: 18px 0px 9px;
+	font-size: 32px;
+	color: #515151;
+}
+
+#agreement .agMess {
+	color: #999;
+	font-size: 14px;
+	text-align: left;
+	margin-top: 18px;
+}
+
+#agreement .pgTtl {
+	font-size: 24px;
+	text-align: left;
+	margin: 18px 0px 6px;
+	color: #707070;
+}
+
+#agreement .pgText li {
+	text-align: left;
+	color: #666;
+	letter-spacing: 1px;
+	margin-top: 18px;
+	position: relative;
+	line-height: 24px;
+}
+
+#agreement .pgText li span {
+	float: left;
+}
+
+#agreement .pgText li div {
+	margin-left: 32px;
+}
+
+#agreement .upTen li div {
+	margin-left: 42px;
+}
+
+#agreement .spewords {
+	text-align: left;
+	margin: 60px 0px 90px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: red;
+}
+
+#agreement .close{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	z-index: 9;
+	cursor: pointer;
+}
+
+
+/*-------*/
+
+/*- go to the top -*/
+
+#flybx{
+	position: fixed;
+	width: 1200px;
+	height: 0px;
+	bottom: 60px;
+	left: 50%;
+	margin-left: -600px;
+	z-index: 98;
+}
+
+#flybx .flyInner{
+	width: 60px;
+	height: 0px;
+	position: absolute;
+	bottom: 135px;
+	right: -90px;
+}
+
+#flyTo{
+	display: none;
+	position: relative;
+	margin: 0 auto;
+	width: 39px;
+	height: 33px; 
+	border-radius: 39px; 
+	cursor: pointer;
+	background: white;
+	text-align: center;
+	opacity: 0;
+	box-shadow: 0px 0px 3px silver;
+	animation-name: topGo;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes topGo{
+	0%{
+		margin-top: -120px;
+		opacity: 0;
+		animation-timing-function: ease-out;
+	}
+	20%{
+		opacity: 1;
+		margin-top: 0px;
+		width: 39px;
+	}
+	35%{
+		margin-top: 18px;
+		width: 43px;
+	}
+	50%{
+		margin-top: -9px
+		width: 37px;
+	}
+	65%{
+		margin-top: 0px;
+		width: 39px;
+	}
+	100%{
+		margin-top: 0px;
+		width: 39px;
+		opacity: 1;
+	}
+}
+
+#flyTo img{
+	/* margin-top: -9px; */
+}
+
+/*-------*/
+
+/*- ie mention -*/
+
+.loginbx .ie-mtin {
+	position: absolute;
+	left: 38px;
+	top: 19px;
+	color: #999;
+	z-index: 0;
+}
+
+#setIn .fm-inp {
+	position: relative;
+	z-index: 9;
+}
+
+
+/*-------*/
+
+.classCage{
+	text-align: left;
+	padding: 30px 0px;
+}
+
+.classCage .column-x{
+	width: 148px;
+	border-left: 1px solid #c6040a;
+	box-sizing: border-box;
+	float: left;
+}
+
+.classCage .noBorder{
+	border-left: 1px solid white;
+}
+
+.classCage .col-ttl{
+	font-size: 16px;
+	color: black;
+	padding-left: 20px;
+	margin-bottom: 12px;
+}
+
+.classCage .col-ttl a{
+	cursor: pointer;
+}
+
+.classCage .col-ttl a:hover{
+	color: #c50012;
+}
+
+.classCage .col-item{
+	padding-left: 20px;
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 9px;
+	
+}
+
+.classCage .col-item a{
+	color: #666666;
+	cursor: pointer;
+}
+
+.classCage .col-item a:hover{
+	color: #c6040a;
+}
+
+.classCage .col-more{
+	padding-left: 20px;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+
+.classCage .col-more a{
+	color: #666666;
+}
+
+.classCage .col-more a:hover{
+	color: #c6040a;
+}
+
+.classCage .col-more .icon{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(C:/Visual/BlackMythWuKong/WukongWeb/img/hover.png);
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-top: 1px;
+}
+
+.classCage .col-more a:hover .icon{
+	background: url(C:/Visual/BlackMythWuKong/WukongWeb/img/hoverR.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 2560px){
+	
+	html,body{
+		zoom: 1.25;
+	}
+	
+}
