@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>传统音乐</title>
+
+
+
+
+	<style>
+        .playing span {
+            color: red; /* 当前播放曲目高亮显示 */
+        }
+    </style>
+
+
+
+
+
     <link rel="stylesheet" href="C:/Visual/BlackMythWuKong/WukongWeb/raditionalMusic\chuantongyinyue.css">
 		<meta charset="UTF-8">
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -156,7 +170,7 @@
 						 	  	  
 						 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20d28012c">
 						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-						 	  	  	  <div class="card-name ellipsis" title="朝阳沟"><span>朝阳沟</spam></div>
+						 	  	  	  <div class="card-name ellipsis" data-song="朝阳沟"><span>朝阳沟</spam></div>
 						 	  	  	  <div class="card-year">
 						 	  	  	  	  <span>中国唱片</span>
 						 	  	  	  	  <span>/</span>
@@ -201,14 +215,15 @@
 						 	  	  </div>
 						 	  	  <div class="cdCard noMagrin" iab="40289c8162f6fa420162f6fc1bf20274">
 						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-						 	  	  	  <div class="card-name"><span>元宵谜</span></div>
+						 	  	  	  <div class="card-name" data-song="元宵谜"><span>元宵谜</span></div>
 						 	  	  	  <div class="card-year">
 						 	  	  	  	  <span>人民唱片</span>
 						 	  	  	  	  <span>/</span>
 						 	  	  	  	  <span>78转唱片</span>
 						 	  	  	  </div>
 						 	  	  </div>
-						 	  	  
+									 <audio id="audioPlayer"></audio>
+									
 						 	  	  <div class="cdCard" iab="4028a6816a4966ec016a49691eec0011">
 						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
 						 	  	  	  <div class="card-name ellipsis" title="英台抗婚"><span>英台抗婚</spam></div>
@@ -238,7 +253,7 @@
 						 	  	  </div>
 						 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f994b900e0">
 						 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-						 	  	  	  <div class="card-name ellipsis"><span>春香傳</span></div>
+						 	  	  	  <div class="card-name ellipsis" data-song="春香傳"><span>春香傳</span></div>
 						 	  	  	  <div class="card-year">
 						 	  	  	  	  <span>艺声唱片</span>
 						 	  	  	  	  <span>/</span>
@@ -361,7 +376,7 @@
 					 	  	  </div>
 					 	  	  <div class="cdCard noMagrin" iab="4028a6816a47be76016a47f9958600f6">
 					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-					 	  	  	  <div class="card-name"><span>宮怨</span></div>
+					 	  	  	  <div class="card-name" data-song="宮怨"><span>宮怨</span></div>
 					 	  	  	  <div class="card-year">
 					 	  	  	  	  <span>艺声唱片</span>
 					 	  	  	  	  <span>/</span>
@@ -388,7 +403,7 @@
 					 	  	  </div>
 					 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f997450131">
 					 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-					 	  	  	  <div class="card-name"><span>孔雀東南飛</span></div>
+					 	  	  	  <div class="card-name" data-song="孔雀东南飞"><span>孔雀東南飛</span></div>
 					 	  	  	  <div class="card-year">
 					 	  	  	  	  <span>艺声唱片</span>
 					 	  	  	  	  <span>/</span>
@@ -495,13 +510,17 @@
 				 	  	  </div>
 				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20cae011e">
 				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-				 	  	  	  <div class="card-name"><span>白毛女</span></div>
+				 	  	  	  <div class="card-name" data-song="白毛女"><span>白毛女</span></div>
 				 	  	  	  <div class="card-year">
 				 	  	  	  	  <span>中国唱片</span>
 				 	  	  	  	  <span>/</span>
 				 	  	  	  	  <span>33转唱片</span>
 				 	  	  	  </div>
 				 	  	  </div>
+						      <!-- 音乐播放器 -->
+                          <audio id="audioPlayer"></audio>
+
+                          
 				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20d550131">
 				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
 				 	  	  	  <div class="card-name ellipsis"><span title="北京的旋律——歌剧选曲 电影歌曲">北京的旋律——歌剧选曲 电影歌曲</span></div>
@@ -522,7 +541,7 @@
 				 	  	  </div>
 				 	  	  <div class="cdCard noMagrin" iab="4028a6816a1ed29d016a1ed61069009a">
 				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-				 	  	  	  <div class="card-name"><span>草原战歌</span></div>
+				 	  	  	  <div class="card-name" data-song="草原战歌"><span>草原战歌</span></div>
 				 	  	  	  <div class="card-year">
 				 	  	  	  	  <span>中国唱片</span>
 				 	  	  	  	  <span>/</span>
@@ -567,7 +586,7 @@
 				 	  	  </div>
 				 	  	  <div class="cdCard" iab="40289c81697f7b5e01697fd20a5900e7">
 				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-				 	  	  	  <div class="card-name"><span>大合唱——井岡山</span></div>
+				 	  	  	  <div class="card-name" data-song="井冈山"><span>大合唱——井岡山</span></div>
 				 	  	  	  <div class="card-year">
 				 	  	  	  	  <span>中国唱片</span>
 				 	  	  	  	  <span>/</span>
@@ -752,7 +771,7 @@
 				 	  	  </div>
 				 	  	  <div class="cdCard" iab="4028a6816a47be76016a47f996b2011d">
 				 	  	  	  <div class="imgs"><img src="http://image.china1896.com/4028a6816b73bb4c016b73bd49960007?imageView2/2/w/260/h/260" /></div>
-				 	  	  	  <div class="card-name"><span>春暖花開</span></div>
+				 	  	  	  <div class="card-name" data-song="春暖花開"><span>春暖花開</span></div>
 				 	  	  	  <div class="card-year">
 				 	  	  	  	  <span>艺声唱片</span>
 				 	  	  	  	  <span>/</span>
@@ -853,11 +872,12 @@
 				 	  </div>
 				 </div>
 				 
-				 
+		    
 				 
 			</div>
 
 		</div>
+
 		<div id="toolbar-options" class="hidden">
 			<div class="text"></div>
 		</div>
@@ -870,6 +890,62 @@
 		<script src="../../lib/js/require.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../comps/reqs/comReqs.js?version=191119" type="text/javascript" charset="utf-8"></script>
 
+
+
+		<!-- 在chuantongyinyue.html文件中，找到搜索框部分 -->
+<div class="searchs">
+    <div class="inpbx">
+        <input name="seek" id="musicSearch" placeholder="搜索专辑、单曲" />
+    </div>
+</div>
+
+<!-- 在页面底部</body>标签前添加以下脚本 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.searchs .inpbx input');
+    
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchText = this.value.trim().toLowerCase();
+            
+            // 获取所有音乐标题
+            const musicTitles = document.querySelectorAll('.card-name span');
+            
+            for (let titleElement of musicTitles) {
+                const title = titleElement.textContent.toLowerCase();
+                
+                if (title.includes(searchText)) {
+                    // 找到匹配项，获取父级卡片元素
+                    const card = titleElement.closest('.cdCard');
+                    
+                    // 滚动到该位置
+                    card.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                    
+                    // 添加高亮效果
+                    card.style.boxShadow = '0 0 10px rgba(197, 0, 18, 0.5)';
+                    setTimeout(() => {
+                        card.style.boxShadow = 'none';
+                    }, 3000); // 3秒后取消高亮
+                    
+                    break;
+                }
+            }
+        }
+    });
+});
+</script>
+
+
+<!-- 在body标签结束前添加 -->
+<audio id="audioPlayer" style="display: none;"></audio>
+<script src="player.js"></script>   
+
+
+
 	</body>
 
 </html>
+

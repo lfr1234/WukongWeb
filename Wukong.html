@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login Page</title>
+<script src="./auth.js"></script>
 <link rel="stylesheet" href="C:/Visual/BlackMythWuKong/WukongWeb/style.css">
 </head>
 <body>
@@ -25,15 +26,15 @@
   <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
   <div class="form-box login">
     <h2>登录</h2>
-    <form action="#">
+    <form action="#" onsubmit="return handleLogin(event)">
       <div class="input-box">
         <span class="icon"><ion-icon name="mail"></ion-icon></span>
-        <input type="email" required>
+        <input type="email" id="loginEmail" required>
         <label>邮箱</label>
       </div>
       <div class="input-box">
         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="password" required>
+        <input type="password" id="loginPassword" required>
         <label>密码</label>
       </div>
       <div class="remember-forgot">
@@ -49,27 +50,26 @@
 
   <div class="form-box register">
     <h2>注册</h2>
-    <form action="#">
+    <form action="#" onsubmit="return handleRegister(event)">
       <div class="input-box">
-        <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
-        <input type="text" required>
+        <span class="icon"><ion-icon name="person"></ion-icon></span>
+        <input type="text" id="registerUsername" required>
         <label>用户名</label>
-      </div>
-      <div class="input-box">
+    </div>
+    <div class="input-box">
         <span class="icon"><ion-icon name="mail"></ion-icon></span>
-        <input type="email" required>
+        <input type="email" id="registerEmail" required>
         <label>邮箱</label>
-      </div>
-      <div class="input-box">
+    </div>
+    <div class="input-box">
         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="password" required>
+        <input type="password" id="registerPassword" required>
         <label>密码</label>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">我同意条款和条件</label>
-       
-      </div>
-      <button type="submit" class="btn">注册</button>
+    </div>
+    <div class="remember-forgot">
+        <label><input type="checkbox" required>我同意条款和条件</label>
+    </div>
+    <button type="submit" class="btn">注册</button>
       <div class="login-register">
         <p>已经有账户？<a href="#" class="login-link">登录</a></p>
       </div>

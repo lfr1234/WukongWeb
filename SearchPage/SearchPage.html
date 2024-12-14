@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="C:/Visual/BlackMythWuKong/WukongWeb/SearchPage\SearchPage.css">
+    <link rel="stylesheet" href="./SearchPage.css">
 </head>
 <body>
     <header>
         <nav class="navigation">
-            <a href="C:/Visual/BlackMythWuKong/WukongWeb/Wukong.html">登录/注册</a>
-          </nav>
+            <a href="../Wukong.html">登录/注册</a>
+        </nav>
     </header>
 
     <div class="searchbox">
-        <input type="search" name="search" placeholder="Search...">
+        <input type="search" id="searchInput" name="search" placeholder="Search...">
     </div>
     
+    <script>
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchText = this.value.trim();
+                const searchMap = {
+                    '古代建筑': '../AncientArchitecyure/gudaijianzhu.html',
+                    '宗教哲学': '../PhilosophyAndReligion/zhexuezongjiao.html',
+                    '传统服饰': '../TraditionalCostume/chuantongfushi.html',
+                    '文化地标': '../CulturralLandmark/wenhuadibiao.html',
+                    '传统文学': '../TraditionalLiterature/chuantongwenxue.html',
+                    '传统音乐': '../TraditionalMusic/chuantongyinyue.html'
+                };
+
+                if (searchMap[searchText]) {
+                    window.location.href = searchMap[searchText];
+                } else {
+                    alert('未找到相关内容，请输入：古代建筑、宗教哲学、传统服饰、文化地标、传统文学、传统音乐');
+                }
+            }
+        });
+    </script>
 </body>
 </html>

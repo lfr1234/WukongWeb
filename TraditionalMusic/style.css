@@ -325,3 +325,48 @@ header{
     transform: translateX(400px) !important;
     /* display: none !important; */
 }
+
+
+
+
+
+
+
+
+.card-name {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.card-name:hover {
+    color: #d4b61e;
+}
+
+.card-name.playing {
+    color: #d4b61e;
+    font-weight: bold;
+}
+
+.card-name.playing::after {
+    content: ' ♪';
+    color: #d4b61e;
+}
+
+
+
+
+
+
+.card-name {
+    cursor: pointer;
+}
+
+.card-name.playing {
+    color: #d4b61e !important;
+    font-weight: bold;
+}
+
+.card-name.playing::after {
+    content: ' ♪';
+    color: #d4b61e;
+}
